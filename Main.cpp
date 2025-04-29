@@ -1,5 +1,5 @@
 #include "raylib.h"
-#include "Game.h"
+#include "Game.cpp"
 
 struct MainGame : public Game
 {
@@ -11,7 +11,7 @@ struct MainGame : public Game
 
 int main(void)
 {
-    MainGame mainGame();
+    MainGame mainGame;
     
     mainGame.EnterMainLoop();
     
