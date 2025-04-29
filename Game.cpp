@@ -1,11 +1,12 @@
 #include "raylib.h"
+#include <vector>
 
-struct Game{
-    
-    void EnterMainLoop(){
-        
-        const int screenWidth = 800;
-        const int screenHeight = 450;
+struct Game
+{
+    void EnterMainLoop()
+    {
+        const int screenWidth = 1000;
+        const int screenHeight = 650;
         InitWindow(screenWidth, screenHeight, "ToyEngine");
         
         SetTargetFPS(60); 

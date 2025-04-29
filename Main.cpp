@@ -1,11 +1,16 @@
 #include "raylib.h"
 #include "Game.cpp"
+#include "Player.cpp"
 
 struct MainGame : public Game
 {
+    Player player;
+    
     void Tick() override
     {
-        DrawText("Test", 8, 8, 20, BLACK);
+        DrawText("ToyEngine", 8, 8, 20, BLACK);
+        
+        player.Uppdate();
     }
 };
 
